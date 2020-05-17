@@ -191,6 +191,28 @@ header {
     padding: 20px;
     
 }
+
+.gallery-first-row {
+    /* min-height: 400px; */
+}
+
+.gallery-image-one, .gallery-image-two {
+    width: 100%;
+    height: auto;
+    display: block;
+    
+    
+}
+
+.specialize, .foot-care {
+    padding: 40px 20px;
+    min-height: 400px;
+    
+}
+
+.specialize h2 {
+
+}
 /* SMALL MEDIUM RESPONSIVE STYLES */
 
 @media (min-width: 420px) {
@@ -282,4 +304,37 @@ header {
         position: relative;
         right: 28%;
     }
+
+    .gallery-first-row {
+        /* height: 50px; */
+    }
+
+    .gallery-image-one-is-medium {
+        width: 50%;
+        float: right;
+        /* min-height: 330px; */
+        display: block;
+    }
+    
+    .specialize-is-medium {
+        padding: 80px 80px;
+        width: 50%;
+        float: left;
+        
+    }
+
+    .gallery-image-two-is-medium {
+        width: 50%;
+        float: left;
+        /* min-height: 330px; */
+        display: block;
+    }
+
+    .foot-care-is-medium {
+        padding: 80px 80px;
+        width: 50%;
+        float: right;
+    }
+
+    
 }
