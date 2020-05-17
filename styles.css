@@ -37,7 +37,7 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 
 /* Body Text */
 /* Catamaran, Regular, 20px */
-/* Line heigh: 29px */
+/* Line height: 29px */
 
 /* Footer navigation */
 /* NovaFlat, Regular, 20px */
@@ -68,7 +68,10 @@ html, body, p, h1, h2, h3, h4, h5, nav, ul, li, a, section, div, main, footer, b
 }
 
 body {
-    font-size: 1.6rem;
+    font-size: 2rem;
+    font-family: 'Catamaran', sans-serif;
+    font-size: 2rem;
+    color: #1F2022;
 }
 
 .wrapper {
@@ -140,6 +143,8 @@ header {
     text-decoration: none;
     color: #186684;
     font-size: 2rem;
+
+    font-family: 'Nova Flat', cursive;
 }
 
 .header-nav-links li a:hover {
@@ -182,6 +187,9 @@ header {
 }
 
 .logo {
+    font-family: 'Nova Flat', cursive;
+    font-weight: 400;
+
     font-size: 5rem;
     color: #186684;
     width: 225px;
@@ -200,19 +208,54 @@ header {
     width: 100%;
     height: auto;
     display: block;
-    
-    
 }
 
 .specialize, .foot-care {
-    padding: 40px 20px;
-    min-height: 400px;
-    
+    padding: 15% 5%;
+    /* min-height: 400px; */
+    text-align: center;
 }
 
-.specialize h2 {
-
+.specialize-heading, .foot-care-heading {
+    color: #186684;
+    font-weight: 400;
+    margin-bottom: 20px;
+    font-size: 3.3rem;
+    font-family: 'Nova Flat', cursive;
+    font-weight: 400;
 }
+
+.specialize-paragraph, .foot-care-paragraph {
+    line-height: 2.9rem;
+    margin-bottom: 20px;
+}
+
+.read-more {
+    background: #ffffff;
+    color: #186684;
+    text-decoration: none;
+    border: 3px solid #E85B26;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-family: 'Nova Flat', cursive;
+    font-weight: 400;
+    display: inline-block;
+
+    -webkit-transition-property: all;
+    transition-property: all;
+    -webkit-transition-timing-function: ease-in;
+    transition-timing-function: ease-in;
+    -webkit-transition-duration: .25s;
+    transition-duration: .25s;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+}
+
+.read-more:hover {
+    background: #E85B26;
+    color: #fff;
+}
+
 /* SMALL MEDIUM RESPONSIVE STYLES */
 
 @media (min-width: 420px) {
@@ -309,32 +352,29 @@ header {
         /* height: 50px; */
     }
 
-    .gallery-image-one-is-medium {
+    .gallery-image-one-is-medium, .gallery-image-two-is-medium {
         width: 50%;
-        float: right;
-        /* min-height: 330px; */
-        display: block;
-    }
-    
-    .specialize-is-medium {
-        padding: 80px 80px;
-        width: 50%;
-        float: left;
-        
-    }
-
-    .gallery-image-two-is-medium {
-        width: 50%;
-        float: left;
-        /* min-height: 330px; */
+        height: auto;
         display: block;
     }
 
-    .foot-care-is-medium {
-        padding: 80px 80px;
+    .specialize-is-medium, .foot-care-is-medium {
         width: 50%;
+        padding: 7.45% 5%;
+        text-align: unset;
+    }
+
+    .foot-care-is-medium, .gallery-image-one-is-medium {
         float: right;
     }
 
-    
+    .specialize-is-medium, .gallery-image-two-is-medium   {
+        float: left;
+    }
+
+    /* font-size: calc(10px + (20 - 10) * (100vw - 320px) / (1900 - 320)); */
+
+    /* calc(minfontsize + (maxfontsize - minfontsize) * (100vw - minscreensize) / (maxscreensize - minscreensize) )for responsive text */
+
+   
 }
