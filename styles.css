@@ -51,7 +51,8 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 /* NovaFlat, Regular, 18px */
 /* Center, Line Height: 29px */
 
-/* 
+
+/*  https://www.smashingmagazine.com/2016/05/fluid-typography/
 calc(minfontsize + (maxfontsize - minfontsize) * (100vw - minscreensize) / (maxscreensize - minscreensize) )for responsive text
 */
 
@@ -88,7 +89,6 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     height: 75vh;
-
 }
 
 
@@ -225,13 +225,13 @@ header {
     font-weight: 400;
 }
 
-.specialize-paragraph, .foot-care-paragraph {
+.specialize-paragraph, .foot-care-paragraph, .giving-back-paragraph {
     line-height: 2.9rem;
     margin-bottom: 20px;
 }
 
 .read-more {
-    background: #ffffff;
+    /* background: #ffffff; */
     color: #186684;
     text-decoration: none;
     border: 3px solid #E85B26;
@@ -255,6 +255,104 @@ header {
     background: #E85B26;
     color: #fff;
 }
+
+.info {
+    
+}
+
+.info-first-row {
+    background: #F4F4F4;
+    padding: 40px 0;
+}
+
+.info-first-row-wrapper {
+    width: calc(100% - 40px);
+    margin: 0 auto;
+}
+
+.info-image {
+    width: 100%;
+}
+
+.giving-back {
+    padding-top: 40px; 
+}
+
+.giving-back-heading {
+    color: #186684;
+    font-weight: 400;
+    margin-bottom: 20px;
+    font-size: 3.3rem;
+    font-family: 'Nova Flat', cursive;
+    font-weight: 400;
+    text-align: center;
+}
+
+.giving-back-read-more-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.giving-back-read-more {
+    
+}
+
+.info-second-row {
+    background: url(assets/image-5@2x.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 20%;
+
+}
+
+.info-navigation {
+    padding: 10%;
+    background: #F4F4F4;
+    /* margin: 0 auto; */
+}
+
+.info-links li {
+    list-style: none;
+    padding: 20px 0;
+}
+
+.info-links > li:nth-child(1) {
+    padding-top: 0;
+}
+
+.info-links > li:nth-child(3) {
+    padding-bottom: 0;
+}
+
+.info-icon {
+    padding-bottom: 20px;
+}
+
+.info-link {
+    text-decoration: none;
+    color: #186684;
+    font-family: 'Nova Flat', cursive;
+    font-weight: 400;
+    font-size: 3rem;
+}
+
+.info-link:hover {
+    
+}
+
+.info-link i {
+    display: block;
+    color: #E85B26;
+}
+
+
+
+.info-link i:hover {
+    color: #da9981;
+}
+
+
 
 /* SMALL MEDIUM RESPONSIVE STYLES */
 
@@ -376,5 +474,50 @@ header {
 
     /* calc(minfontsize + (maxfontsize - minfontsize) * (100vw - minscreensize) / (maxscreensize - minscreensize) )for responsive text */
 
-   
+    .info-first-row-is-medium {
+        padding: 80px 0;
+    }
+    
+    .info-first-row-wrapper-is-medium {
+        width: calc(100% - 200px);
+    }
+
+    .info-image-is-medium {
+        width: 25%;
+        float: left;
+    }
+
+    .giving-back-is-medium {
+        width: 70%;
+        float: right;
+        padding-top: unset;
+    }
+
+    .giving-back-heading-is-medium {
+        text-align: unset;
+    }
+
+    .giving-back-read-more-container-is-medium {
+        text-align: unset;
+    }
+    
+    .info-second-row-is-medium {
+        padding: 143px 0px;
+        min-height: 500px;
+    }
+
+    .info-navigation-is-medium {
+        padding: 50px 10px;
+        background: #F4F4F4; 
+        margin: unset;
+        width: 65%;
+        max-width: 745px;
+        display: inline-block;
+    }
+
+    .info-links-is-medium li{
+        display: inline-block;
+        width: calc(33% - 10px);
+        padding: 0;
+    }
 }
