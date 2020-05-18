@@ -196,8 +196,7 @@ header {
     background: rgb(244, 244, 244, 0.85);
     font-weight: 400;
     float: right;
-    padding: 20px;
-    
+    padding: 20px;    
 }
 
 .gallery-first-row {
@@ -216,7 +215,7 @@ header {
     text-align: center;
 }
 
-.specialize-heading, .foot-care-heading {
+.specialize-heading, .foot-care-heading, .the-gram-header {
     color: #186684;
     font-weight: 400;
     margin-bottom: 20px;
@@ -301,6 +300,7 @@ header {
     background: url(assets/image-5@2x.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     text-align: center;
     padding: 20%;
 
@@ -352,6 +352,35 @@ header {
     color: #da9981;
 }
 
+.the-gram {
+    text-align: center;
+    padding: 65px 0;
+}
+
+.the-gram-header {
+    margin-bottom: 65px;
+}
+
+.the-gram-images-container {
+    width: calc(100% - 10px);
+    margin: 0 auto;
+}
+
+.the-gram-images-container img {
+    width: calc(50% - 20px);
+}
+
+.the-gram-images-container > img:nth-child(1) {
+    margin-right: 5px;
+}
+
+.the-gram-images-container > img:nth-child(2) {
+    margin-left: 5px;
+}
+
+.the-gram-images-container > img:nth-child(3) {
+    display: none;
+}
 
 
 /* SMALL MEDIUM RESPONSIVE STYLES */
@@ -520,4 +549,28 @@ header {
         width: calc(33% - 10px);
         padding: 0;
     }
+
+    .the-gram-images-container-is-medium {
+        width: calc(100% - 200px);
+        margin: 0 auto;
+    }
+
+    .the-gram-images-container-is-medium img {
+        width: calc(33% - 20px);
+    }
+
+    .the-gram-images-container > img:nth-child(1) {
+        margin-right: 10px;
+    }
+
+    .the-gram-images-container > img:nth-child(2) {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .the-gram-images-container > img:nth-child(3) {
+        display: unset;                             
+        margin-left: 10px;
+    }
+
 }
