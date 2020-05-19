@@ -59,7 +59,7 @@ calc(minfontsize + (maxfontsize - minfontsize) * (100vw - minscreensize) / (maxs
 /* BASE STYLES */
 html {
 	font-size: 62.5%;
-    font-family: 'Nova Flat', cursive;
+    font-family: 'Catamaran', sans-serif;
     font-weight: 400;
 }
 
@@ -70,7 +70,7 @@ html, body, p, h1, h2, h3, h4, h5, nav, ul, li, a, section, div, main, footer, b
 
 body {
     font-size: 2rem;
-    font-family: 'Catamaran', sans-serif;
+    /* font-family: 'Catamaran', sans-serif; */
     font-size: 2rem;
     color: #1F2022;
 }
@@ -83,20 +83,13 @@ body {
 
 /* MOBILE STYLES */
 
+/* HEADER */
 header {
     position: relative;
     background-image: url(assets/image-1-m@2x.png);
     background-repeat: no-repeat;
     background-size: cover;
     height: 75vh;
-}
-
-
-
-.header-nav {
-    /* width: 100%; */
-    /* height: 50px; */
-    /* position: relative; */
 }
 
 .button-wrapper {
@@ -106,7 +99,6 @@ header {
 }
 
 .menu-button {
-    /* margin: 15px 15px 0 0; */
     background: transparent;
     border: none;
     position: absolute;
@@ -199,10 +191,7 @@ header {
     padding: 20px;    
 }
 
-.gallery-first-row {
-    /* min-height: 400px; */
-}
-
+/* GALLERY */
 .gallery-image-one, .gallery-image-two {
     width: 100%;
     height: auto;
@@ -211,7 +200,6 @@ header {
 
 .specialize, .foot-care {
     padding: 15% 5%;
-    /* min-height: 400px; */
     text-align: center;
 }
 
@@ -230,7 +218,6 @@ header {
 }
 
 .read-more {
-    /* background: #ffffff; */
     color: #186684;
     text-decoration: none;
     border: 3px solid #E85B26;
@@ -255,10 +242,7 @@ header {
     color: #fff;
 }
 
-.info {
-    
-}
-
+/* INFO */
 .info-first-row {
     background: #F4F4F4;
     padding: 40px 0;
@@ -292,9 +276,7 @@ header {
     margin-top: 20px;
 }
 
-.giving-back-read-more {
-    
-}
+
 
 .info-second-row {
     background: url(assets/image-5@2x.png);
@@ -309,7 +291,6 @@ header {
 .info-navigation {
     padding: 10%;
     background: #F4F4F4;
-    /* margin: 0 auto; */
 }
 
 .info-links li {
@@ -332,13 +313,9 @@ header {
 .info-link {
     text-decoration: none;
     color: #186684;
-    font-family: 'Nova Flat', cursive;
+    font-family: 'Catamaran', sans-serif;
     font-weight: 400;
     font-size: 3rem;
-}
-
-.info-link:hover {
-    
 }
 
 .info-link i {
@@ -352,6 +329,7 @@ header {
     color: #da9981;
 }
 
+/* THE GRAM */
 .the-gram {
     text-align: center;
     padding: 65px 0;
@@ -382,6 +360,7 @@ header {
     display: none;
 }
 
+/* FOOTER */
 footer {
     background: #F4F4F4;
     text-align: center;
@@ -397,10 +376,6 @@ footer {
 
 .footer-nav {
     margin-bottom: 40px;
-}
-
-.footer-nav-links {
-   
 }
 
 .footer-nav-links li {
@@ -427,10 +402,6 @@ footer {
     font-family: 'Nova Flat', cursive;
     color: #E85B26;
     font-weight: 400;
-}
-
-.stay-updated {
-    
 }
 
 .stay-updated-heading {
@@ -465,9 +436,18 @@ footer {
     font-size: 1.6rem;
     font-family: 'Nova Flat', cursive;
     font-weight: 400;
+
+    -webkit-transition-property: all;
+    transition-property: all;
+    -webkit-transition-timing-function: ease-in;
+    transition-timing-function: ease-in;
+    -webkit-transition-duration: .25s;
+    transition-duration: .25s;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
 }
 
-.newsletter-submit:active {
+.newsletter-submit:hover {
     background: #E85B26;
 }
 
@@ -486,7 +466,7 @@ footer {
     padding: 15px;
 }
 
-/* SMALL MEDIUM RESPONSIVE STYLES */
+/* SMALL-MEDIUM RESPONSIVE STYLES */
 
 @media (min-width: 420px) {
 
@@ -515,11 +495,12 @@ footer {
 
 @media (min-width: 875px) {
 	.wrapper-is-medium {
-	max-width: 1200px;
-	width: 85%;
-    margin: 0 auto;
+        max-width: 1200px;
+        width: 85%;
+        margin: 0 auto;
     }
 
+    /* HEADER */
     .header-is-medium {
         background-position: center center;
         background-size: cover;
@@ -568,19 +549,19 @@ footer {
 
     .logo-wrapper-is-medium {
         position: absolute;
-        bottom: 200px;
+        bottom: 140px;
         
     }
 
     .logo-is-medium {
         position: relative;
-        right: 28%;
+        right: 18%;
+        font-size: 12rem;
+        line-height: .85;
+        width: 486px;
     }
 
-    .gallery-first-row {
-        /* height: 50px; */
-    }
-
+    /* GALLERY */
     .gallery-image-one-is-medium, .gallery-image-two-is-medium {
         width: 50%;
         height: auto;
@@ -601,10 +582,7 @@ footer {
         float: left;
     }
 
-    /* font-size: calc(10px + (20 - 10) * (100vw - 320px) / (1900 - 320)); */
-
-    /* calc(minfontsize + (maxfontsize - minfontsize) * (100vw - minscreensize) / (maxscreensize - minscreensize) )for responsive text */
-
+    /* INFO */
     .info-first-row-is-medium {
         padding: 80px 0;
     }
@@ -652,6 +630,7 @@ footer {
         padding: 0;
     }
 
+    /* THE GRAM */
     .the-gram-images-container-is-medium {
         width: calc(100% - 200px);
         margin: 0 auto;
@@ -675,7 +654,8 @@ footer {
         margin-left: 10px;
     }
 
-    .footer-wrapper {
+    /* FOOTER */
+    .footer-wrapper-is-medium {
         width: calc(100% - 220px);
     }
 
@@ -686,7 +666,7 @@ footer {
 
     }
 
-    .contact {
+    .contact-is-medium {
         width: calc(40% - 10px);
         max-width: 300px;
         text-align: justify;
@@ -694,24 +674,24 @@ footer {
 
     }
     
-    .stay-updated {
+    .stay-updated-is-medium {
         width: calc(50% - 10px);
         float: right;
         text-align: justify;
 
     }
 
-    .newsletter-email, .newsletter-submit {
+    .newsletter-email-is-medium, .newsletter-submit-is-medium {
         display: unset;
         width: unset;
         margin: unset;
     }
 
-    .newsletter-email {
+    .newsletter-email-is-medium {
         width: calc(70% - 10px);
     }
 
-    .newsletter-submit {
+    .newsletter-submit-is-medium {
         width: 25%;
         min-width: 142px;
     }
